@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Nilai</h1>
+
+    <script>
+      function nilaiSiswa(nilai) {
+        // menentukan nilai
+        let nilaiHuruf;
+        if (nilai >= 85 && nilai <= 100) {
+          nilaiHuruf = "A";
+        } else if (nilai >= 75 && nilai <= 85) {
+          nilaiHuruf = "B";
+        } else if (nilai >= 60 && nilai <= 75) {
+          nilaiHuruf = "C";
+        } else {
+          nilaiHuruf = "D";
+        }
+
+        // menentukan jenis bilangan
+        let jenisBilangan = nilai % 2 === 0 ? "Genap" : "Ganjil";
+
+        // Menampilkan
+        console.log("Nilai Bilangan", nilai);
+        console.log("Nilai Huruf", nilaiHuruf);
+        console.log("Bilangan", jenisBilangan);
+      }
+
+      //   Contoh
+      nilaiSiswa(55);
+    </script>
+  </body>
+</html>
